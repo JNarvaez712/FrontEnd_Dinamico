@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cuota Mensual</title>
+</head>
+<body>
+    <main>
+        <div>
+            <fieldset>
+                <h1>
+                    Bienvenido, en esta pagina te brindamos los recursos 
+                    necesarios para que puedas conocer tus prestamos a traves de esta calculadora
+                </h1>
+            </fieldset>
+            <h2>
+                Calcula Tu cuota mensual
+            </h2>
+            <form id="form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="monto">Monto del prestamo:</label>
+                <input type="number" id="monto" required><br><br>
+                <label for="interes">Interes: </label>
+                <input type="number" id="interes" required><br><br>
+                <label for="meses">Meses: </label>
+                <input type="number" id="meses" required><br><br>
+                <textarea name="impresion" id="impresionCuota" cols="40" rows="5"></textarea><br><br>
+                <button type="button" onclick="calcularCuotaMensual()">Calcular</button>
+                
+            </form>
+        </div>
+        <div id="resultado"></div>
+        <script src="Script/funciones.js"></script>
+    </main>
+</body>
+</html>
